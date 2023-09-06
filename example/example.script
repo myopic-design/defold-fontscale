@@ -1,30 +1,9 @@
 function init(self)
-	local s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	local reverse_s = myextension.reverse(s)
-	print(reverse_s) --> ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba
-end
+  msg.post("@render:", "use_fixed_fit_projection")
 
-function final(self)
-	-- Add finalization code here
-	-- Remove this function if not needed
-end
-
-function update(self, dt)
-	-- Add update code here
-	-- Remove this function if not needed
-end
-
-function on_message(self, message_id, message, sender)
-	-- Add message-handling code here
-	-- Remove this function if not needed
-end
-
-function on_input(self, action_id, action)
-	-- Add input-handling code here
-	-- Remove this function if not needed
-end
-
-function on_reload(self)
-	-- Add reload-handling code here
-	-- Remove this function if not needed
+  timer.delay(1, true, function()
+    local scale = fontscale.get()
+    label.set_text("#label", "Font scale: " .. tostring(scale))
+    go.set("#label", "scale", vmath.vector3(scale, scale, 0))
+  end)
 end
