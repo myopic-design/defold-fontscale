@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/myopic-design/defold-fontscale/actions/workflows/bob.yml/badge.svg)](https://github.com/myopic-design/defold-fontscale/actions)
+
 # Defold FontScale
 
 Defold [native extension](https://www.defold.com/manuals/extensions/) that returns the preferred font scaling factor on the device.
