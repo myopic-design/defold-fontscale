@@ -1,3 +1,5 @@
+![Defold FontScale logo](docs/hero@2x.png)
+
 [![Actions Status](https://github.com/myopic-design/defold-fontscale/actions/workflows/bob.yml/badge.svg)](https://github.com/myopic-design/defold-fontscale/actions)
 
 # Defold FontScale
